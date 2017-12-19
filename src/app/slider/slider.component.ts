@@ -8,9 +8,9 @@ import { Component, AfterViewInit, Input, OnInit } from '@angular/core';
 export class PLSlider implements OnInit, AfterViewInit {
 
   @Input('height') height:string = "400px";
-  @Input('items') itemsInView:any = 6;
+  @Input('items') itemsInView:any = 5;
   @Input('margin') itemMargin:any = 0.1;
-  @Input('slidesToMove') slidesToMove:any = 2;
+  @Input('slidesToMove') slidesToMove:any = 1;
   @Input('extraInfo') extraInfo:string = "false";
   @Input('data') itemData: any [];
   @Input('autoSlide') autoSlideStatus:string = "false";
