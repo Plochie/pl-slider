@@ -1,6 +1,6 @@
 # Angular 2+ Slider
 
-[![PL|Plochie](https://github.com/Plochie/pl-slider/blob/master/src/assets/logo.png)](https://github.com/Plochie)
+[![PL|Plochie](https://raw.githubusercontent.com/Plochie/pl-slider/master/src/assets/logo.png)](https://github.com/Plochie)
 <br/>
 This slider is created using Angular 4. It is completely written in typescript and nowhere DOM is used to achieve effects. All effects are based on CSS transition and style binding with Algular components.
 
