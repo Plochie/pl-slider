@@ -12,7 +12,7 @@ npm install pl-slider
 ```
 
 After successfull installation import in `app.module.ts`
-```
+```typescript
 import { PLSlider } from 'pl-slider';
 
 @NgModule({
