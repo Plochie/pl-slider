@@ -42,9 +42,7 @@ itemData = [
 
 2. Bind that array to `data` property and assign some height for slider.
 ```html
-<pl-slider [data]="itemData"
-            height="400px">
-</pl-slider>
+<pl-slider [data]="itemData"></pl-slider>
 ```
 	This will create basic slider with predefined values. (for default values refer Properties table)
 
