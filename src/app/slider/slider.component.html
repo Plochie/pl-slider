@@ -1,0 +1,39 @@
+<!-- Set height from user value 'height' -->
+<div class="wrapper" 
+[ngStyle]="{'height': height}" 
+(mouseenter)="pauseSlider(true)"
+(mouseleave)="pauseSlider(false)">
+
+    <div class="prev" (click)="slidePrev()">
+        <!-- only show prev when at least once next happened -->
+        <!-- <i class="fa fa-angle-left" aria-hidden="true" > </i> -->
+        <i class="left" *ngIf="sliderCounter != 0"></i>
+    </div>
+
+    <div class="slider-wrapper">
+        <div class="location-wrapper" 
+        [ngStyle]="locationWrapperStyles()">
+        
+            <div class="location-container" 
+            *ngFor="let data of itemData"
+            [ngStyle]="locationContainerStyles(data)">
+    
+                <!-- Extra info on hover -->
+                <div class="info-container" *ngIf="extraInfo == 'true'">
+                    <span><strong>Information</strong></span>
+                    <p> Sub-Information </p>
+                </div>
+
+                <h3><strong>{{data.title}}</strong></h3>
+                <p>{{data.info}}</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="next" (click)="slideNext()">
+        <!-- hide next when all items are visited -->
+        <!-- <i class="fa fa-angle-right" aria-hidden="true" *ngIf="sliderCounter < itemRemaining"> </i> -->
+        <i class="right" *ngIf="sliderCounter < itemRemaining"></i>
+    </div>
+</div>

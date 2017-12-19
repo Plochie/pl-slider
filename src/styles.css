@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* circular airbnb font */
+@font-face {
+    font-family: 'circular light';
+    src: url('/assets/fonts/circular/circular-light.woff2');
+  
+  }
+  
+  @font-face {
+    font-family: 'circular book';
+    src: url('/assets/fonts/circular/circular-book.woff2');
+  
+  }
+  
+  @font-face {
+    font-family: 'circular bold';
+    src: url('/assets/fonts/circular/circular-bold.woff2');
+  
+  }
+  
+* {
+    font-family: 'circular light';
+}
