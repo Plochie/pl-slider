@@ -27,6 +27,7 @@ Now, use `<pl-slider></pl-slider>` in any component.
 ## Usage
 
 1. This slider requires JSON array data as input. Create JSON array in respective components (.ts) file.
+> All the fields in JSON are not necessary, only add those required.
 ```javascript
 itemData = [
     { image: '/path/slide1.jpg', title: 'Title 1'}, 
@@ -40,7 +41,7 @@ itemData = [
 ]
 ```
 
-2. Bind that array to `data` property and assign some height for slider.
+2. Bind that array to `data` property of slider.
 ```html
 <pl-slider [data]="itemData"></pl-slider>
 ```
